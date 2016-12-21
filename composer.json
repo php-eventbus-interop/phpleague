@@ -10,7 +10,8 @@
     }
   ],
   "require": {
-    "eventbus-interop/eventbus-interop": "dev-master"
+    "eventbus-interop/eventbus-interop": "dev-master",
+    "league/event": "^2.1"
   },
   "require-dev": {
     "phpspec/phpspec": "~3.0.0",
@@ -23,7 +24,7 @@
   },
   "autoload": {
     "psr-4": {
-      "InterOp\\EventBus\\League\\": "src"
+      "EventIO\\League\\": "src"
     }
   },
   "config": {

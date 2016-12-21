@@ -1,0 +1,9 @@
+---
+suites:
+  default:
+    namespace: EventIO\League
+    psr4_prefix: EventIO\League
+    spec_prefix: spec
+    src_path: %paths.config%/src
+    spec_path: %paths.config%
+...

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6e9e1268e5d0879d656f6d2f4c3e5044",
-    "content-hash": "072f048654fde92ecf61728165511f2a",
+    "hash": "b2f441915c07d727f4fc2dde0345d13c",
+    "content-hash": "1e99ad0d7d590a00d970bae292f549d4",
     "packages": [
         {
             "name": "eventbus-interop/eventbus-interop",
@@ -13,21 +13,22 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-eventbus-interop/event-bus-interop.git",
-                "reference": "5f1c8c7ec1b8082eb3a8fda687eb1c9763a5e707"
+                "reference": "1a2795ebc44a54c4e43fb33774c3e81fa8f4ccb5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-eventbus-interop/event-bus-interop/zipball/5f1c8c7ec1b8082eb3a8fda687eb1c9763a5e707",
-                "reference": "5f1c8c7ec1b8082eb3a8fda687eb1c9763a5e707",
+                "url": "https://api.github.com/repos/php-eventbus-interop/event-bus-interop/zipball/1a2795ebc44a54c4e43fb33774c3e81fa8f4ccb5",
+                "reference": "1a2795ebc44a54c4e43fb33774c3e81fa8f4ccb5",
                 "shasum": ""
             },
             "require-dev": {
-                "escapestudios/symfony2-coding-standard": "^2.9"
+                "escapestudios/symfony2-coding-standard": "^2.9",
+                "eventio/phpleague": "self.version"
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "InterOp\\EventBus\\": "src"
+                    "EventIO\\InterOp\\": "src"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -41,7 +42,57 @@
                 }
             ],
             "description": "Interoperability interface definitions for event buses",
-            "time": "2016-12-19 17:00:12"
+            "time": "2016-12-21 14:16:17"
+        },
+        {
+            "name": "league/event",
+            "version": "2.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/event.git",
+                "reference": "e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/event/zipball/e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd",
+                "reference": "e4bfc88dbcb60c8d8a2939a71f9813e141bbe4cd",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "henrikbjorn/phpspec-code-coverage": "~1.0.1",
+                "phpspec/phpspec": "~2.0.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.2-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "League\\Event\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Frank de Jonge",
+                    "email": "info@frenky.net"
+                }
+            ],
+            "description": "Event package",
+            "keywords": [
+                "emitter",
+                "event",
+                "listener"
+            ],
+            "time": "2015-05-21 12:24:47"
         }
     ],
     "packages-dev": [
