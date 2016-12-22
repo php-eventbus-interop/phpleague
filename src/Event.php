@@ -2,7 +2,8 @@
 
 namespace EventIO\League;
 
-use EventIO\InterOp\EventInterface;
+use EventIO\InterOp\Event\BridgedEventInterface;
+use EventIO\InterOp\Event\EventInterface;
 use League\Event\AbstractEvent;
 use League\Event\EmitterInterface;
 
@@ -10,7 +11,7 @@ use League\Event\EmitterInterface;
  * Class Event
  * @package EventIO\League
  */
-class Event extends AbstractEvent
+class Event extends AbstractEvent implements BridgedEventInterface
 {
     /**
      * @var EmitterInterface

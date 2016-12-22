@@ -2,7 +2,7 @@
 
 namespace spec\EventIO\League;
 
-use EventIO\InterOp\EventInterface;
+use EventIO\InterOp\Event\EventInterface;
 use League\Event\EmitterInterface;
 use PhpSpec\ObjectBehavior;
 
@@ -16,6 +16,13 @@ class EventSpec extends ObjectBehavior
     function it_allows_access_to_the_wrapped_event($event)
     {
         $this->getWrappedEvent()->shouldReturn($event);
+    }
+
+    function it_has_a_name($event)
+    {
+        $name = 'league.fake_event';
+        $event->name()->willReturn($name);
+        $this->getName()->shouldReturn($name);
     }
 
     function it_stops_propogation($event)
